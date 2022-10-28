@@ -24,7 +24,7 @@ function randomConceptGenerator($array_a, $array_b) {
 
 
 function timeGenerator() {
-$date = (mt_rand(0000000000, 9999999999));
+$date = (mt_rand(0000000000, 99999999999));
 $date = date('d M Y', $date );
 
 global $generatedConcept;
@@ -37,12 +37,15 @@ array_push($generatedConcept,$date);
 function randomString() {
     $characters = 'abcdefghijklmnopqrstuvxyz';
     $randomString = '';
-    $n = rand(3, 8);
+    $n = rand(3, 7);
 
     for ($i = 0; $i < $n; $i++) {
         $index = rand(0, strlen($characters) - 1);
         $randomString .= $characters[$index];
+
     }
+
+    $randomString = ucfirst($randomString);
 
     global $generatedConcept;
 
