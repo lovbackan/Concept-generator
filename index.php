@@ -3,17 +3,17 @@ require './variables.php';
 require './functions.php';
 
 
-        if(isset($_POST['randomConcept'])) {
-            randomConceptGenerator($technologies, $parts);
-            // print_r($history);
-        }
-        if(isset($_POST['randomTime'])) {
-            timeGenerator();
-        }
+if(isset($_POST['randomConcept'])) {
+randomConceptGenerator($technologies, $parts);
+}
 
-        if(isset($_POST['randomString'])) {
-            randomstring(10);
-        }
+if(isset($_POST['randomTime'])) {
+timeGenerator();
+}
+
+if(isset($_POST['randomString'])) {
+randomstring(10);
+}
 ?>
 
 <!DOCTYPE html>
@@ -26,9 +26,9 @@ require './functions.php';
     <title>Concept Generator</title>
 </head>
 <body>
-    <h1>Concept Generator</h1>
-<?php for ($i = 0; $i < 256; $i++) : ?>
-        <?php $star = $stars[$i % count($stars)]; ?>
+<?php for ($i = 0; $i < 256; $i++) :
+     $star = $stars[$i % count($stars)]; ?>
+     
         <div class = 'sky' style="
                 background-color: <?= $star['color']; ?>;
                 height: <?= $star['size']; ?>px;
@@ -39,8 +39,19 @@ require './functions.php';
             "></div>
     <?php endfor; ?>
 
-<div class = 'container'>
+<main>
 
+<div class = header>
+    <h1>Sci-fi Concept Generator</h1>
+</div>
+
+<h2>
+<?php
+
+echo implode(" ", $generatedConcept);
+
+?>
+</h2>
     
     <form method="post">
 
@@ -55,7 +66,7 @@ require './functions.php';
 
     </form>
 
-</div>
+</main>
 
 </body>
 </html>

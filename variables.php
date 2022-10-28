@@ -49,5 +49,6 @@ $parts = [
 //     'Composit'
 // ];
 
-$history = [];
+
+$generatedConcept = [];
 
