@@ -5,13 +5,13 @@ declare(strict_types=1);
 require './variables.php';
 
 // Tänker att man trycker på olika knappar som symboliserar olika arrayer så puttas de in i denna funktionen
-function randomConceptGenerator($array_a, $array_b)
+function randomConceptGenerator(array $a, array $b)
 {
-    shuffle($array_a);
-    shuffle($array_b);
+    shuffle($a);
+    shuffle($b);
 
-    $arrayitem_a = $array_a[0];
-    $arrayitem_b = $array_b[0];
+    $arrayitem_a = $a[0];
+    $arrayitem_b = $b[0];
 
     global $generatedConcept;
 
@@ -61,15 +61,15 @@ function randomString()
 }
 
 
-function randomName($array_a, $array_b, $array_c)
+function randomName(array $a, array $b, array $c)
 {
-    shuffle($array_a);
-    shuffle($array_b);
-    shuffle($array_c);
+    shuffle($a);
+    shuffle($b);
+    shuffle($c);
 
-    $arrayitem_a = $array_a[0];
-    $arrayitem_b = $array_b[0];
-    $arrayitem_c = $array_c[0];
+    $arrayitem_a = $a[0];
+    $arrayitem_b = $b[0];
+    $arrayitem_c = $c[0];
 
     global $generatedConcept;
 
