@@ -72,7 +72,7 @@ if (isset($_POST['randomName'])) {
         </form>
 
         <h3>
-                History: 
+            History:
         </h3>
         <ol class="historyList">
         </ol>
@@ -84,10 +84,12 @@ if (isset($_POST['randomName'])) {
 
         // Loopa igenom historik och visa upp
         const ol = document.querySelector(".historyList");
-        history.forEach(historyItem => {
-            const li = document.createElement("li");
-            li.appendChild(document.createTextNode(historyItem));
-            ol.appendChild(li);
+        history.forEach((historyItem, i) => {
+            if (i < 15) {
+                const li = document.createElement("li");
+                li.appendChild(document.createTextNode(historyItem));
+                ol.appendChild(li);
+            }
 
         })
 
@@ -96,8 +98,10 @@ if (isset($_POST['randomName'])) {
         const newGeneratedString = document.querySelector(".generatedString").innerHTML.trim();
 
 
-        // Lägg till ny sträng i historiken
-        history.push(newGeneratedString);
+        // Lägg till ny sträng i historiken längst fram
+        if (newGeneratedString) {
+            history.unshift(newGeneratedString);
+        }
 
         // Uppdatera med ny historik
         localStorage.setItem("history", history);
