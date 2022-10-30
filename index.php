@@ -71,14 +71,37 @@ if (isset($_POST['randomName'])) {
 
         </form>
 
+        <h3>
+                History: 
+        </h3>
+        <ol class="historyList">
+        </ol>
+
     </main>
     <script>
+        // Hämta historiken
+        const history = localStorage.getItem("history").split(",");
+
+        // Loopa igenom historik och visa upp
+        const ol = document.querySelector(".historyList");
+        history.forEach(historyItem => {
+            const li = document.createElement("li");
+            li.appendChild(document.createTextNode(historyItem));
+            ol.appendChild(li);
+
+        })
+
+
+        // Ta nuvarande sträng
         const newGeneratedString = document.querySelector(".generatedString").innerHTML.trim();
-        const history = localStorage.getItem("history");
-        const historyArray = history.split(" ")
-        historyArray.push(newGeneratedString)
-        console.log(historyArray)
-        localStorage.setItem("history", newGeneratedString)
+
+
+        // Lägg till ny sträng i historiken
+        history.push(newGeneratedString);
+
+        // Uppdatera med ny historik
+        localStorage.setItem("history", history);
+        console.log(history);
     </script>
 </body>
 
