@@ -9,7 +9,7 @@ if (localStorage.getItem('history') !== null) {
   // Loopa igenom historik och visa upp på hemsidan
   const ol = document.querySelector('.historyList');
   history.forEach((historyItem, i) => {
-    if (i <= 14) {
+    if (i <= 14 && historyItem) {
       const li = document.createElement('li');
       li.appendChild(document.createTextNode(historyItem));
       ol.appendChild(li);
