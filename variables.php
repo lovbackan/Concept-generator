@@ -23,7 +23,7 @@ $technologies = [
     'Composit',
     'Biotic',
     'Mechanical',
-    'Necrobotic',
+    'Necrobiotic',
 ];
 
 
