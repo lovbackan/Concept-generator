@@ -93,7 +93,6 @@ if (isset($_POST['randomName'])) {
 
         })
 
-
         // Ta nuvarande sträng
         const newGeneratedString = document.querySelector(".generatedString").innerHTML.trim();
 
@@ -106,6 +105,7 @@ if (isset($_POST['randomName'])) {
         // Uppdatera med ny historik
         localStorage.setItem("history", history);
         console.log(history);
+
     </script>
 </body>
 

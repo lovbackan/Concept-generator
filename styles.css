@@ -28,12 +28,4 @@ main {
   color: aqua;
 }
 
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
+/* om man är i inkognite mode gör en echo som säger att lämna inkognito mode */
