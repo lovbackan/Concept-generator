@@ -1,21 +1,27 @@
-// Hämta historiken
-let history = localStorage.getItem('history').split(',');
+//History ska vara en array som ska fyllas med data från local storage men om det inte finns något i local storage så ska vi skapa en tom array.
 
-// Loopa igenom historik och visa upp på hemsidan
-const ol = document.querySelector('.historyList');
-history.forEach((historyItem, i) => {
-  if (i <= 14) {
-    const li = document.createElement('li');
-    li.appendChild(document.createTextNode(historyItem));
-    ol.appendChild(li);
-  }
+let history = [];
 
-  //Begränsar historik arrayen
+if (localStorage.getItem('history') !== null) {
+  // Hämta historiken
+  history = localStorage.getItem('history').split(',');
 
-  if (history[i] > history[15]) {
-    history.pop();
-  }
-});
+  // Loopa igenom historik och visa upp på hemsidan
+  const ol = document.querySelector('.historyList');
+  history.forEach((historyItem, i) => {
+    if (i <= 14) {
+      const li = document.createElement('li');
+      li.appendChild(document.createTextNode(historyItem));
+      ol.appendChild(li);
+    }
+
+    //Begränsar historik arrayen
+
+    if (history[i] > history[15]) {
+      history.pop();
+    }
+  });
+}
 
 // Ta nuvarande sträng
 const newGeneratedString = document
