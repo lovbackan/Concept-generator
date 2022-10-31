@@ -85,11 +85,19 @@ if (isset($_POST['randomName'])) {
         // Loopa igenom historik och visa upp
         const ol = document.querySelector(".historyList");
         history.forEach((historyItem, i) => {
-            if (i < 15) {
+            if (i <= 14) {
                 const li = document.createElement("li");
                 li.appendChild(document.createTextNode(historyItem));
                 ol.appendChild(li);
             }
+
+            //Detta tar bort saker från historyn så att history arrayen inte blir oändlig!
+
+            if (history[i] > history[15]) {
+                history.pop();
+            }
+
+
 
         })
 
@@ -106,6 +114,7 @@ if (isset($_POST['randomName'])) {
         localStorage.setItem("history", history);
         console.log(history);
 
+        // Ta bort saker i history
     </script>
 </body>
 
