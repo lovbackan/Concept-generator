@@ -32,6 +32,8 @@ if (isset($_POST['randomName'])) {
 </head>
 
 <body>
+
+    <!-- Stjärnhimmel generator -->
     <?php for ($i = 0; $i < 256; $i++) :
         $star = $stars[$i % count($stars)]; ?>
 
@@ -78,44 +80,7 @@ if (isset($_POST['randomName'])) {
         </ol>
 
     </main>
-    <script>
-        // Hämta historiken
-        const history = localStorage.getItem("history").split(",");
-
-        // Loopa igenom historik och visa upp
-        const ol = document.querySelector(".historyList");
-        history.forEach((historyItem, i) => {
-            if (i <= 14) {
-                const li = document.createElement("li");
-                li.appendChild(document.createTextNode(historyItem));
-                ol.appendChild(li);
-            }
-
-            //Detta tar bort saker från historyn så att history arrayen inte blir oändlig!
-
-            if (history[i] > history[15]) {
-                history.pop();
-            }
-
-
-
-        })
-
-        // Ta nuvarande sträng
-        const newGeneratedString = document.querySelector(".generatedString").innerHTML.trim();
-
-
-        // Lägg till ny sträng i historiken längst fram
-        if (newGeneratedString) {
-            history.unshift(newGeneratedString);
-        }
-
-        // Uppdatera med ny historik
-        localStorage.setItem("history", history);
-        console.log(history);
-
-        // Ta bort saker i history
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
