@@ -67,9 +67,10 @@ if (isset($_POST['randomName'])) {
 
             <input class='button' type="submit" name="randomTime" value="Random Time" />
 
+            <input class='button' type="submit" name="randomName" value="Random Name" />
+
             <input class='button' type="submit" name="randomString" value="Random String" />
 
-            <input class='button' type="submit" name="randomName" value="Random Name" />
 
         </form>
 

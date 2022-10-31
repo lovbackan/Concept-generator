@@ -22,8 +22,8 @@ $technologies = [
     'Synthetic',
     'Composit',
     'Biotic',
-    'Bio',
     'Mechanical',
+    'Necrobotic',
 ];
 
 
@@ -43,6 +43,7 @@ $generatedConcept = [];
 
 $generatedConceptString = "";
 
+//Om man komibernar alla phonetics arrayer så kommer man alltid få ord/namn man kan uttala
 
 $phoneticsPre = [
     // Simple phonetics
