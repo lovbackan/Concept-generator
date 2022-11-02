@@ -1,12 +1,13 @@
-//History ska vara en array som ska fyllas med data från local storage men om det inte finns något i local storage så ska vi skapa en tom array.
+//History is an array which is filled with generated concepts which are saved in the local history (look at the last line of code in this js)
 
 let history = [];
 
+// If there is nothing in the history array then dont execute the code below the if statement
 if (localStorage.getItem('history') !== null) {
-  // Hämta historiken
+  // fetch history
   history = localStorage.getItem('history').split(',');
 
-  // Loopa igenom historik och visa upp på hemsidan
+  //  Loop through history and display it in the history list
   const ol = document.querySelector('.historyList');
   history.forEach((historyItem, i) => {
     if (i <= 14 && historyItem) {
@@ -15,7 +16,7 @@ if (localStorage.getItem('history') !== null) {
       ol.appendChild(li);
     }
 
-    //Begränsar historik arrayen
+    //Limits the history array to store only 16 items
 
     if (history[i] > history[15]) {
       history.pop();
@@ -23,16 +24,16 @@ if (localStorage.getItem('history') !== null) {
   });
 }
 
-// Ta nuvarande sträng
+// Take current generated concept string and save it to this new variable
 const newGeneratedString = document
   .querySelector('.generatedString')
   .innerHTML.trim();
 
-// Lägg till ny sträng i historiken längst fram
+// If newGeneratesString is not null then place it in the first spot of the history array
 if (newGeneratedString) {
   history.unshift(newGeneratedString);
 }
 
-// Uppdatera med ny historik
+// Saves the value of current history array to the local storage
 localStorage.setItem('history', history);
 console.log(history);
