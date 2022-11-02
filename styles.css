@@ -9,15 +9,6 @@ main {
   align-items: center;
 }
 
-.header {
-  justify-content: center;
-  color: white;
-}
-
-.container {
-  align-items: center;
-}
-
 .button {
   background-color: blue;
   color: aqua;
