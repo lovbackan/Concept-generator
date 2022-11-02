@@ -58,8 +58,10 @@ $subjective = [
     'cortex',
     'neuron',
     'vein',
-    'oran',
     'spinal chord',
+    'synpase',
+    'cortisol',
+    'adrenaline',
     //Diseases
     'mutation',
     'psychosis',
@@ -67,7 +69,6 @@ $subjective = [
     //Psychology
     'introspection',
     'persona',
-    'abuse',
     'blackout',
     //Nature
     'tree',
