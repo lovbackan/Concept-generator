@@ -24,6 +24,8 @@ $adjective = [
     'Haptic',
     'Augmented',
     'Modified',
+    'Cyber',
+    'Neural',
     //Concept
     'Modular',
     'Sentient',
@@ -37,12 +39,15 @@ $adjective = [
     'Organic',
     'Artificial',
     'Necrobiotic',
+    'Chrome',
+    'Bio',
     //Science
     'Phantom',
     'Sonic',
     'Genetic',
     'Introspective',
     'Distorted',
+    'Cryotonic',
 ];
 
 
@@ -53,6 +58,8 @@ $subjective = [
     'cortex',
     'neuron',
     'vein',
+    'oran',
+    'spinal chord',
     //Diseases
     'mutation',
     'psychosis',
@@ -61,6 +68,7 @@ $subjective = [
     'introspection',
     'persona',
     'abuse',
+    'blackout',
     //Nature
     'tree',
     'mycelium',
@@ -72,7 +80,9 @@ $subjective = [
     'energy',
     'atom',
     'molecule',
+    'seed',
     //Technology
+    'monitor',
     'code',
     'machine',
     'deck',
@@ -85,6 +95,9 @@ $subjective = [
     'visualizer',
     'terminal',
     'wiring',
+    'probe',
+    'malfunction',
+    'stimulant',
     //Other
     'neutralization',
     'singularity',
@@ -95,6 +108,7 @@ $subjective = [
     'building',
     'ritual',
     'element',
+    'oath',
     //Sciences
     'programming',
     'engineering',
@@ -105,6 +119,7 @@ $subjective = [
     'neurobiology',
     'psychology',
     'botany',
+    'surgery',
 
 ];
 
