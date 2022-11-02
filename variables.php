@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+//Array for the starry sky background
+
 $stars = [
     ['color' => 'aqua', 'size' => 2],
     ['color' => 'aquamarine', 'size' => 3],
@@ -10,40 +12,107 @@ $stars = [
     ['color' => 'yellow', 'size' => 1],
 ];
 
-$technologies = [
+$adjective = [
+    //Nature
     'Solar',
+    'Star',
+    'Chaotic',
+    //Technology
     'Body modified',
     'Implant',
     'Holographic',
+    'Haptic',
+    //Concept
     'Modular',
     'Sentient',
+    'Haphazardous',
+    //Material
     'Nano',
     'Carbon',
     'Synthetic',
     'Composit',
     'Biotic',
     'Mechanical',
+    'Organic',
+    'Artificial',
     'Necrobiotic',
+    //Science
+    'Phantom',
+    'Sonic',
+    'Genetic',
+    'Introspective',
+    'Distorted',
 ];
 
 
-$parts = [
-    'eyes',
-    'paint',
-    'horror',
+$subjective = [
+    //Body
+    'eye',
+    'brain',
+    'cortex',
+    'neurons',
+    'venin',
+    //Diseases
+    'mutation',
+    'psychosis',
+    'disfigurement',
+    //Psychology
+    'introspection',
+    'persona',
+    'abuse',
+    //Nature
+    'trees',
+    'leaf',
+    'mycelium',
+    'roots',
+    'wind',
+    'sky',
+    'world',
+    'planet',
+    'energy',
+    //Technology
+    'code',
+    'machine',
     'deck',
     'circuit',
     'beam',
     'drive',
+    'warp',
+    'portal',
+    'neuralyzer',
+    'visualizer',
+    'terminal',
+    'wiring',
+    //Other
+    'neutralization',
+    'singularity',
+    'stack',
     'ship',
+    'paint',
+    'horror',
     'building',
+    'ritual',
+    'element',
+    //Sciences
+    'programming',
+    'engineering',
+    'calculus',
+    'archaeology',
+    'physics',
+    'geology',
+    'neurobiology',
+    'psychology',
+    'botany',
+
 ];
+
+//These two are needed to create the generated strings. First the concept is added into the empty array then it is transformed into a string.
 
 $generatedConcept = [];
 
 $generatedConceptString = "";
 
-//Om man komibernar alla phonetics arrayer så kommer man alltid få ord/namn man kan uttala
+//If u concatenateall three phoentics arrays to one string u will always get one pronounceable word/name.
 
 $phoneticsPre = [
     // Simple phonetics

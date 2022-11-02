@@ -39,8 +39,6 @@ function timeGenerator()
 
     global $generatedConceptString;
 
-    //Gör om det till en string
-
     $generatedConceptString = implode(" ", $generatedConcept);
 }
 
@@ -72,7 +70,6 @@ function randomString()
 function randomName(array $a, array $b, array $c)
 {
 
-    //Sammma logik som första funktionen
     shuffle($a);
     shuffle($b);
     shuffle($c);
