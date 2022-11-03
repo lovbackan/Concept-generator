@@ -48,6 +48,7 @@ $adjective = [
     'Introspective',
     'Distorted',
     'Cryotonic',
+    'Cognetive',
 ];
 
 
@@ -121,6 +122,8 @@ $subjective = [
     'psychology',
     'botany',
     'surgery',
+    //Medicine
+    'nootropics',
 
 ];
 
