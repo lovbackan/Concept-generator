@@ -22,5 +22,6 @@ Code review written by [Jane Doh](https://github.com/username).
 
 Tested by the following people:
 
-1. Jane Doe
-2. John Doe
+1. Emma Hedlund
+2. Vali al Osachi
+3. Dan Hakkerman
