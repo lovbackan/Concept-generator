@@ -1,8 +1,8 @@
-INSERT MANDATORY GIF
+![](https://github.com/lovbackan/Git-lesson/blob/main/see%20you%20space%20cowboy.gif)
 
-# Project Title
+# Sci-fi Concept Generator
 
-Text about the project and why it exists. This would also be a great place to link the project on One.com.
+I have made a concept generator for sci-fi worlds to help creators get new ideas to help them in their creative process. You can find the deployed site at ![](https://www.simonlovbacka.se/Concept-generator/).
 
 # Installation
 
