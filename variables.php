@@ -52,7 +52,7 @@ $adjective = [
 ];
 
 
-$subjective = [
+$noun = [
     //Body
     'eye',
     'brain',

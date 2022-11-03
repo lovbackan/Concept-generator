@@ -4,7 +4,7 @@ require './functions.php';
 
 
 if (isset($_POST['randomConcept'])) {
-    randomConceptGenerator($adjective, $subjective);
+    randomConceptGenerator($adjective, $noun);
 }
 
 if (isset($_POST['randomTime'])) {
