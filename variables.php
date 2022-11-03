@@ -48,7 +48,7 @@ $adjective = [
     'Introspective',
     'Distorted',
     'Cryotonic',
-    'Cognetive',
+    'Cognitive',
 ];
 
 
