@@ -2,7 +2,7 @@
 
 # Sci-fi Concept Generator
 
-I have made a concept generator for sci-fi worlds to help creators get new ideas to help them in their creative process. You can find the deployed site at ![](https://www.simonlovbacka.se/Concept-generator/).
+I have made a concept generator for sci-fi worlds to help creators get new ideas to help them in their creative process. You can find the deployed site at https://www.simonlovbacka.se/Concept-generator/
 
 # Installation
 
