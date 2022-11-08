@@ -1,6 +1,7 @@
 <?php
 require './data.php';
 require './functions.php';
+require './starysky.php';
 
 
 if (isset($_POST['randomConcept'])) {
@@ -33,25 +34,9 @@ if (isset($_POST['randomName'])) {
 
 <body>
 
-    <!-- Stjärnhimmel generator -->
-    <?php for ($i = 0; $i < 256; $i++) :
-        $star = $stars[$i % count($stars)]; ?>
-
-        <div class='sky' style="
-                background-color: <?= $star['color']; ?>;
-                height: <?= $star['size']; ?>px;
-                left: <?= random_int(1, 99) ?>vw;
-                position: absolute;
-                top: <?= random_int(1, 99) ?>vh;
-                width: <?= $star['size']; ?>px;
-            "></div>
-    <?php endfor; ?>
-
     <main>
 
-        <div class=header>
-            <h1>Sci-fi Concept Generator</h1>
-        </div>
+        <h1>Sci-fi Concept Generator</h1>
 
         <h2 class="generatedString">
             <?php
@@ -73,6 +58,19 @@ if (isset($_POST['randomName'])) {
 
 
         </form>
+
+        <!-- <form method="post">
+
+            <input class='button' type="submit" name="randomizer" value="Random concept" />
+
+            <input class='button' type="submit" name="randomizer" value="Random Time" />
+
+            <input class='button' type="submit" name="randomizer" value="Random Name" />
+
+            <input class='button' type="submit" name="randomizer" value="Random String" />
+
+
+        </form> -->
 
         <h3>
             History:

@@ -27,7 +27,7 @@ function randomConceptGenerator(array $a, array $b)
     $generatedConceptString = implode(" ", $generatedConcept);
 }
 
-
+// This function randomizes a number and converts it with the date function to Day Month Year
 function timeGenerator()
 {
     $date = (mt_rand(0000000000, 99999999999));
@@ -66,7 +66,7 @@ function randomString()
     $generatedConceptString = implode(" ", $generatedConcept);
 }
 
-
+// Shuffles 3 arrays and concattinates the first item in each array into one word
 function randomName(array $a, array $b, array $c)
 {
 
@@ -85,4 +85,8 @@ function randomName(array $a, array $b, array $c)
     global $generatedConceptString;
 
     $generatedConceptString = ucfirst(implode("", $generatedConcept));
+}
+
+function starrySkyGenerator()
+{
 }
