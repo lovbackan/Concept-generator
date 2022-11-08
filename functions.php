@@ -48,13 +48,12 @@ function randomString()
     $characters = 'abcdefghijklmnopqrstuvxyz';
     $randomString = '';
     $n = rand(3, 7);
-
-    // Puttar in en randomiserad bokstav i den tomma strängen $randomstring
+    //Puts a randomized letter into the emtpy string $randomstring
     for ($i = 0; $i < $n; $i++) {
         $index = rand(0, strlen($characters) - 1);
         $randomString .= $characters[$index];
     }
-    // Gör första bokstaven till en stor bokstav
+    // Converts the first letter into a capital letter
     $randomString = ucfirst($randomString);
 
     global $generatedConcept;
@@ -85,8 +84,4 @@ function randomName(array $a, array $b, array $c)
     global $generatedConceptString;
 
     $generatedConceptString = ucfirst(implode("", $generatedConcept));
-}
-
-function starrySkyGenerator()
-{
 }

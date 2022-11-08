@@ -1,4 +1,8 @@
-<?php for ($i = 0; $i < 256; $i++) :
+<?php
+
+//This could should not have inline coding!
+
+for ($i = 0; $i < 256; $i++) :
     $star = $stars[$i % count($stars)]; ?>
 
     <div style="

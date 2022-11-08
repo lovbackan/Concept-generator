@@ -1,4 +1,5 @@
-<?php require './header.php' ?>
+<?php require './requirements.php' ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,16 +12,12 @@
 </head>
 
 <body>
-
     <main>
-
         <h1>Sci-fi Concept Generator</h1>
 
         <h2 class="generatedString">
             <?php
-
             echo $generatedConceptString;
-
             ?>
         </h2>
 
@@ -40,8 +37,8 @@
         <h3>
             History:
         </h3>
-        <ol class="historyList">
-        </ol>
+
+        <ol class="historyList"></ol>
 
     </main>
     <script src="script.js"></script>

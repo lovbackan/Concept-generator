@@ -1,7 +1,7 @@
 <?php
 require './data.php';
 require './functions.php';
-require './starysky.php';
+require './starbackground.php';
 
 
 if (isset($_POST['randomConcept'])) {
