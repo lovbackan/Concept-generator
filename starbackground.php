@@ -1,7 +1,7 @@
 <?php
 
-//This could should not have inline coding!
-
+//Feedback : This should not have inline coding!
+//This creates the randomgenerated star background for the site
 for ($i = 0; $i < 256; $i++) :
     $star = $stars[$i % count($stars)]; ?>
 

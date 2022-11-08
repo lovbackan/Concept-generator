@@ -3,7 +3,7 @@ require './data.php';
 require './functions.php';
 require './starbackground.php';
 
-
+// Depending on what button u press a certain function will be called upon and a $generatedConceptString will be created
 if (isset($_POST['randomConcept'])) {
     randomConceptGenerator($adjective, $noun);
 }

@@ -7,22 +7,22 @@ require './data.php';
 
 function randomConceptGenerator(array $a, array $b)
 {
-    // Shufflar två arrayer
+    // Shuffles two arrays
     shuffle($a);
     shuffle($b);
-    //Sparar det första värdet från dem i två nya variabler
+    //Saves the first item in the shuffled array to a new variable
     $arrayitem_a = $a[0];
     $arrayitem_b = $b[0];
 
     global $generatedConcept;
 
-    // Pushar in dem i den tomma arrayen $generated concept
+    // Pushes the two new variables into the empty array $generated concept
 
     array_push($generatedConcept, $arrayitem_a, $arrayitem_b);
 
     global $generatedConceptString;
 
-    // Gör om arrayen till en string
+    // Converts the array into a string
 
     $generatedConceptString = implode(" ", $generatedConcept);
 }
