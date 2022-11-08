@@ -1,26 +1,4 @@
-<?php
-require './data.php';
-require './functions.php';
-require './starysky.php';
-
-
-if (isset($_POST['randomConcept'])) {
-    randomConceptGenerator($adjective, $noun);
-}
-
-if (isset($_POST['randomTime'])) {
-    timeGenerator();
-}
-
-if (isset($_POST['randomString'])) {
-    randomstring(10);
-}
-
-if (isset($_POST['randomName'])) {
-    randomName($phoneticsPre, $phoneticsMid, $phoneticsPost);
-}
-?>
-
+<?php require './header.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,7 +6,7 @@ if (isset($_POST['randomName'])) {
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="Sci-fi Concept Generator" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Concept Generator</title>
 </head>
 
@@ -48,7 +26,7 @@ if (isset($_POST['randomName'])) {
 
         <form method="post">
 
-            <input class='button' type="submit" name="randomConcept" value="Random concept" />
+            <input class='button' type="submit" name="randomConcept" value="Random Concept" />
 
             <input class='button' type="submit" name="randomTime" value="Random Time" />
 
@@ -58,19 +36,6 @@ if (isset($_POST['randomName'])) {
 
 
         </form>
-
-        <!-- <form method="post">
-
-            <input class='button' type="submit" name="randomizer" value="Random concept" />
-
-            <input class='button' type="submit" name="randomizer" value="Random Time" />
-
-            <input class='button' type="submit" name="randomizer" value="Random Name" />
-
-            <input class='button' type="submit" name="randomizer" value="Random String" />
-
-
-        </form> -->
 
         <h3>
             History:
