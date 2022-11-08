@@ -1,5 +1,5 @@
 <?php
-require './variables.php';
+require './data.php';
 require './functions.php';
 
 
