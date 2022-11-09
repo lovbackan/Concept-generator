@@ -23,13 +23,13 @@
 
         <form method="post">
 
-            <input class='button' type="submit" name="randomConcept" value="Random Concept" />
+            <input class='button' type="submit" name="randomizer[1]" value='Random Concept' />
 
-            <input class='button' type="submit" name="randomTime" value="Random Time" />
+            <input class='button' type="submit" name="randomizer[1]" value='Random Time' />
 
-            <input class='button' type="submit" name="randomName" value="Random Name" />
+            <input class='button' type="submit" name="randomizer[1]" value='Random Name' />
 
-            <input class='button' type="submit" name="randomString" value="Random String" />
+            <input class='button' type="submit" name="randomizer[1]" value='Random String' />
 
 
         </form>

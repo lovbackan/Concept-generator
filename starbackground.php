@@ -1,6 +1,7 @@
 <?php
 
-//Feedback : This should not have inline coding!
+//Feedback : This should not have inline coding! I should probably convert this into a javascript forloop
+
 //This creates the randomgenerated star background for the site
 for ($i = 0; $i < 256; $i++) :
     $star = $stars[$i % count($stars)]; ?>
