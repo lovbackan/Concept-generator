@@ -1,8 +1,15 @@
 ![](https://github.com/lovbackan/Git-lesson/blob/main/see%20you%20space%20cowboy.gif)
 
 # Sci-fi Concept Generator
+Our first project at the web developer education at YRGO, the assigment was to create whatever we wanted but with a few conditions regarding PHP functions.
+I made a concept generator for sci-fi worlds to help creators get new ideas to help them in their creative process.
 
-I have made a concept generator for sci-fi worlds to help creators get new ideas to help them in their creative process. You can find the deployed site at https://www.simonlovbacka.se/Concept-generator/
+# Deployment
+You can find the deployed site at https://www.simonlovbacka.se/Concept-generator/
+
+# Stack
+
+PHP, HTML and CSS. 
 
 # Installation
 
